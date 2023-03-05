@@ -20,7 +20,7 @@ int main() {
 
     selection_sort(arr, n);
 
-    printf("Array ordenado: \n");
+    printf("Sorted array: \n");
     for (int i=0; i < n; i++)
         printf("%d ", arr[i]);
     printf("\n");
