@@ -5,7 +5,8 @@ In this repository I will declare some summaries and explanations about sorting 
 
 ### List of topics:
  * [What is an sorting algorithm?](#esortal)
- * [Selection Sort?](#selsort)
+ * [Selection Sort](#selsort)
+ * [Insertion Sort](#insertsort)
 ##
 ## <a name = "esortal"> What is an sorting algorithm? </a>
 
@@ -37,4 +38,21 @@ The algorithm has a *time complexity of O(n^2), where n is the number of element
 
 However, Selection Sort can be useful in some situations, such as when the list is very small or when the list is almost sorted. Additionally, Selection Sort is an in-place algorithm, meaning it does not require additional memory to sort the list. This makes it useful in situations where memory space is limited.
 
-Here are the implementation in [Java](https://github.com/Ivi-SCD/Algorithm/blob/main/SelectionSort/src/br/com/ip/sort/SelectionSort.java), [Python](https://github.com/Ivi-SCD/Algorithm/blob/main/SelectionSort/src/br/com/ip/sort/SelectionSort.py), [C](https://github.com/Ivi-SCD/Algorithm/blob/main/SelectionSort/src/br/com/ip/sort/SelectionSort.c)
+Here are the implementation in [Java](https://github.com/Ivi-SCD/Algorithm/blob/main/SelectionSort/src/br/com/ip/sort/SelectionSort.java), [Python](https://github.com/Ivi-SCD/Algorithm/blob/main/SelectionSort/src/br/com/ip/sort/SelectionSort.py) and [C](https://github.com/Ivi-SCD/Algorithm/blob/main/SelectionSort/src/br/com/ip/sort/SelectionSort.c)
+
+##
+### <a name="insertsort"> Insertion Sort :diamonds: </a>
+Insertion Sort is a simple sorting algorithm that traverses a list of elements and inserts each element into the correct position in a sublist to the left of that element. This process is repeated until the list is completely sorted.
+
+The algorithm works as follows:
+
+- Traverse the list to be sorted from the second element to the end.
+- For each element, traverse the sublist to the left of that element, moving each larger element to the right until the correct position is found to insert the current element.
+- Insert the current element into the correct position in the sublist to the left.
+- Repeat steps 2 and 3 until the list is completely sorted.
+
+The algorithm has a time complexity of O(n^2), where n is the number of elements in the list. In the worst case, where the list is completely unsorted, the algorithm will need to traverse the list several times to insert each element into its correct position. However, in situations where the list is already almost sorted, Insertion Sort can be more efficient than other sorting algorithms, such as Merge Sort and Quick Sort.
+
+Insertion Sort is also an in-place algorithm, which means that it does not require additional memory to sort the list. This makes it useful in situations where memory space is limited.
+
+Here are some implementations in [Java](https://github.com/Ivi-SCD/Algorithm/blob/main/InsertionSort/src/br/com/ip/sort/InsertionSort.java), [Python](https://github.com/Ivi-SCD/Algorithm/blob/main/InsertionSort/src/br/com/ip/sort/InsertionSort.py) and [C](https://github.com/Ivi-SCD/Algorithm/blob/main/InsertionSort/src/br/com/ip/sort/InsertionSort.c):
